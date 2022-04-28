@@ -1,0 +1,140 @@
+/* custom css login page  */
+#login {
+  overflow-x:  hidden;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  width: 100%;
+  height: auto;
+  background-image: url('../public/background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#login .col {
+  display: flex;
+}
+
+#login .conatiner-md {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+#login h2#title-top {
+  width: 480px;
+  margin-bottom: 35px;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 30px;
+  color: #2F2B71;
+}
+
+#login h2#title-top span {
+  color: #54B8FF;
+}
+
+#login .card {
+  width: 385px;
+}
+
+#login .card-body {
+  padding: 0;
+}
+
+#login .card .card-body .card-title h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 60px;
+  color: #5F596E;
+}
+
+/* form login*/
+#login .card .card-body form.form-inline {
+  margin-top: 46px;
+}
+
+#login .card .card-body form.form-inline input {
+  outline: none;
+  border: 2px inset #032D23;
+  box-shadow: none;
+  font-family: 'Inter';
+  color: #032D23;
+  font-size: 18px;
+}
+
+#login .card .card-body form.form-inline input[type="email"] {
+  margin-bottom: 20px;
+}
+
+#login .card .card-body form.form-inline input[type="password"] {
+  margin-bottom: 15px;
+}
+
+#login .card .card-body form.form-inline input[type="checkbox"] {
+  width: 19px;
+  height: 19px;
+}
+
+#login .card .card-body form.form-inline .form-check {
+  padding-left: 1.8em;
+}
+
+#login .card .card-body form.form-inline .form-check #radio-check {
+  float: left;
+}
+
+#login .card .card-body form.form-inline .form-check #forgot-pw {
+  float: right;
+}
+
+#login .card .card-body form.form-inline .form-check label {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+#login .card .card-body form.form-inline input[type="checkbox"]:checked {
+  background-color: #54B8FF;
+  border:  none;
+}
+
+#login .card .card-body form.form-inline #submit-login {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #54B8FF;
+  color: #ffffff;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: 'Inter';
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#login .card .card-body #link-reg {
+  margin-top: 30px;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  color: #032D23;
+}
+
+#login .card .card-body #link-reg a {
+  font-family: 'Inter';
+  font-weight: 600;
+  font-size: 20px;
+  color: #54B8FF;
+  text-decoration: none;
+}
+
+#login #right {
+  position: relative;
+  right: -30px;
+}
+
+#login img#illustration {
+  background-size: cover;
+  position: relative;
+}
