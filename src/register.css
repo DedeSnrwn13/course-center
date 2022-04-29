@@ -5,14 +5,14 @@
   margin-bottom: 70px;
   width: 100%;
   height: auto;
-  background-image: url('../public/background.png');
+  background-image: url("../public/background.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
-#register .col {
+/* #register .col {
   display: flex;
-}
+} */
 
 #register .conatiner-md {
   max-width: 1180px;
@@ -30,10 +30,10 @@
 #register .card .card-body .card-title h1 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 700;
   font-size: 60px;
-  color: #5F596E;
+  color: #5f596e;
 }
 
 /* form register*/
@@ -43,10 +43,10 @@
 
 #register .card .card-body form.form-inline input {
   outline: none;
-  border: 2px inset #032D23;
+  border: 2px inset #032d23;
   box-shadow: none;
-  font-family: 'Inter';
-  color: #032D23;
+  font-family: "Inter";
+  color: #032d23;
   font-size: 18px;
 }
 
@@ -66,29 +66,29 @@
 #register .card .card-body form.form-inline #submit-register {
   margin-top: 20px;
   width: 100%;
-  background-color: #54B8FF;
+  background-color: #54b8ff;
   color: #ffffff;
   border: none;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 20px;
   font-weight: 600;
 }
 
 #register .card .card-body #link-log {
   margin-top: 30px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 400;
   font-size: 20px;
-  color: #032D23;
+  color: #032d23;
 }
 
 #register .card .card-body #link-log a {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 600;
   font-size: 20px;
-  color: #54B8FF;
+  color: #54b8ff;
   text-decoration: none;
 }
 
@@ -98,35 +98,38 @@
 }
 
 #register .card .card-body .or span {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 20px;
   font-weight: 600;
-  color: #032D23;
+  color: #032d23;
 }
 
 #register .card .card-body #social-login {
   display: flex;
   justify-content: space-between;
-
 }
 
 #register .card .card-body #social-login button {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 6px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-weight: 600;
   font-size: 20px;
   letter-spacing: -0.33px;
-  color: #032D23;
+  color: #032d23;
   border: none;
   width: 45%;
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
+#register #right {
+  position: relative;
+  right: -30px;
+}
+
 #register img#illustration {
   background-size: cover;
-  right: -120px;
   position: relative;
 }
