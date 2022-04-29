@@ -34,74 +34,62 @@ const Login = () => {
     <div id="login" className="d-flex align-items-center">
       <Container>
         <Row>
-          <Col className="col-md-5">
-            <div>
-              <div>
-                <h2 id="title-top">
-                  Welcom back to <span>Course Center</span>
-                </h2>
-              </div>
-              <Card className="border-0">
-                <CardBody>
-                  <CardTitle>
-                    <h1>Login</h1>
-                  </CardTitle>
-
-                  <Form inline autoComplete="off">
-                    <FormGroup floating>
-                      <Input
-                        id="exampleEmail"
-                        name="email"
-                        placeholder="Email"
-                        type="email"
-                        value={username}
-                        onChange={onChangeUsername}
-                      />
-                      <Label for="exampleEmail">Email</Label>
-                    </FormGroup>{" "}
-                    <FormGroup floating>
-                      <Label for="examplePassword">Password</Label>
-                      <div className="input-group">
-                        <Input
-                          id="examplePassword"
-                          name="password"
-                          placeholder="Password"
-                          type="password"
-                          value={password}
-                          onChange={onChangePassword}
-                        />
-
-                        <div className="input-group-append">
-                          <img
-                            src={iconEye}
-                            alt="icon eye"
-                            id="mybutton"
-                            onClick=""
-                          />
-                        </div>
-                      </div>
-                    </FormGroup>
-                    <FormGroup check>
-                      <div id="radio-check">
-                        <Input type="checkbox" />{" "}
-                        <Label check>Remember me</Label>
-                      </div>
-                      <div id="forgot-pw">
-                        <Link to="#">Forgot Password?</Link>
-                      </div>
-                    </FormGroup>
-                    <Button id="submit-login">Login</Button>
-                  </Form>
-
-                  <div id="link-reg">
-                    Don’t have an account?{" "}
-                    <Link to="/register">Get Started</Link>
-                  </div>
-                </CardBody>
-              </Card>
-            </div>
+          <Col>
+            <h2 id="title-top">
+              Welcom back to <span>Course Center</span>
+            </h2>
           </Col>
-          <Col className="col-md-7">
+        </Row>
+        <Row>
+          <Col className="col-lg-5 col-md-12 d-md-block d-lg-block col-sm-12 d-flex d-sm-flex justify-content-center">
+            <Card className="border-0">
+              <CardBody>
+                <CardTitle>
+                  <h1>Login</h1>
+                </CardTitle>
+
+                <Form inline autoComplete="off">
+                  <FormGroup floating>
+                    <Input
+                      id="exampleEmail"
+                      name="email"
+                      placeholder="Email"
+                      type="email"
+                      value={username}
+                      onChange={onChangeUsername}
+                    />
+                    <Label for="exampleEmail">Email</Label>
+                  </FormGroup>{" "}
+                  <FormGroup floating>
+                    <Input
+                      id="examplePassword"
+                      name="password"
+                      placeholder="Password"
+                      type="password"
+                      value={password}
+                      onChange={onChangePassword}
+                    />
+                    <Label for="examplePassword">Password</Label>
+                    <img src={iconEye} alt="icon eye" id="btn-eye" />
+                  </FormGroup>
+                  <FormGroup check>
+                    <div id="radio-check">
+                      <Input type="checkbox" /> <Label check>Remember me</Label>
+                    </div>
+                    <div id="forgot-pw">
+                      <Link to="#">Forgot Password?</Link>
+                    </div>
+                  </FormGroup>
+                  <Button id="submit-login">Login</Button>
+                </Form>
+
+                <div id="link-reg">
+                  Don’t have an account? <Link to="/register">Get Started</Link>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col className="col-md-7 d-md-block d-sm-none d-none">
             <div id="right">
               <img
                 src="./illustration-right.png"

@@ -45,7 +45,7 @@ const Register = () => {
     <div id="register" className="d-flex align-items-center">
       <Container>
         <Row>
-          <Col className="col-md-5 col-sm d-sm-flex justify-content-center">
+          <Col className="col-md-5 d-md-block d-lg-block col-sm-12 d-flex d-sm-flex justify-content-center">
             <Card className="border-0">
               <CardBody>
                 <CardTitle>
@@ -115,7 +115,7 @@ const Register = () => {
               </CardBody>
             </Card>
           </Col>
-          <Col className="col-md-7 d-md-block d-sm-none">
+          <Col className="col-md-7 d-md-block d-sm-none d-none">
             <div id="right">
               <img
                 src="./illustration-right.png"

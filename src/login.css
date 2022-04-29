@@ -10,11 +10,11 @@
   background-repeat: no-repeat;
 }
 
-#login .col {
+/* #login .col {
   display: flex;
-}
+} */
 
-#login .conatiner-md {
+#login .conatiner {
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -145,7 +145,42 @@
   right: -30px;
 }
 
-#login img#illustration {
+#login #right img#illustration {
   background-size: cover;
   position: relative;
+}
+
+#login #btn-eye {
+  position: relative;
+  float: right;
+  top: -52px;
+  right: 10px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #login {
+    background-image: none !important;
+  }
+
+  #login h2#title-top {
+    font-size: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  #login .card {
+    width: 100%;
+  }
+
+  #login #right {
+    right: 0px;
+    display: none;
+  }
+
+  #login #right img#illustration {
+    padding-top: 60px;
+    max-width: 550px;
+  }
 }

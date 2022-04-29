@@ -14,7 +14,7 @@
   display: flex;
 } */
 
-#register .conatiner-md {
+#register .conatiner {
   max-width: 1180px;
   margin: 0 auto;
 }
@@ -129,7 +129,30 @@
   right: -30px;
 }
 
-#register img#illustration {
+#register #right img#illustration {
   background-size: cover;
   position: relative;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  #register {
+    background-image: none !important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  #register .card {
+    width: 100%;
+  }
+
+  #register #right {
+    right: 0px;
+  }
+
+  #register #right img#illustration {
+    padding-top: 60px;
+    max-width: 550px;
+  }
 }
